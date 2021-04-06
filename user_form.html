@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="userstyle.css" rel="stylesheet" />
+    <title>USER LISTING APPLICATION</title>
+  </head>
+  <html>
+    <h1>User Form</h1>
+    <div class="input-user">
+      <h1 id="form-title"></h1>
+    </div>
+
+    <form action="./Dashboard.html" id="form__input" >
+      <body>
+        <label >User ID</label><br />
+        <input
+          type="number"
+          id="userId"
+          disabled
+        /><br />
+
+        <label>First Name</label><br />
+        <input
+          type="text"
+          placeholder="Enter Your First Name"
+          id="first_name"
+          pattern = "[a-zA-Z]{1,25}"
+          required=""
+        /><br />
+
+        <label>Last Name</label><br />
+        <input
+          type="text"
+          placeholder="Enter Your Last Name"
+          id="last_name"
+          pattern = "[a-zA-Z]{1,25}"
+          required=""
+        /><br/>
+
+        <label>Mail ID</label><br />
+        <input
+          type="email"
+          placeholder="Enter Your Email Id"
+          id="user_mail"
+          required
+        /><br />
+
+        <label>Mobile Number</label><br>
+        <input
+          type="tel"
+          placeholder="Enter Your Mobile Number"
+          id="mobile_num"
+          pattern="[0-9]{10}"
+          required
+        /><br />
+        
+    </form>
+    
+    <script language = "javascript" src ="user_form.js"></script>
+  
+  </body>
+  </html>
+</html>
